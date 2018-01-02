@@ -1,0 +1,185 @@
+@import "bourbon"
+@import "vars"
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html
+  min-height: 100%
+  display: flex
+  flex-direction: column
+  overflow-x: hidden
+
+body
+  flex: auto
+  font-size: 16px
+  line-height: 1.3
+  min-width: 320px
+  position: relative
+  font-family: $default-font
+  overflow-x: hidden
+  color: $default-color
+  display: flex !important
+  flex-direction: column
+  justify-content: flex-start
+  margin: 0
+  background-color: #fff
+
+header
+  min-height: 100vh
+
+main
+  flex-grow: 1
+  overflow-x: hidden
+
+*
+  box-sizing: border-box
+  outline: 0
+
+a
+  text-decoration: none
+  color: $default-color
+  &:hover
+    color: $accent
+  &:active,:focus
+    color: darken($accent, 10%)
+  &:hover,:active,:focus,:visited
+    outline: none
+
+input
+  outline: none
+
+section
+  position: relative
+
+label
+  display: block
+  width: 100%
+
+img
+  width: 100%
+  height: auto
+  display: block
+
+li
+  list-style-type: none
+
+p
+  line-height: 25px
+
+h1,h2,h3,h4,h5,h6
+  font-family: $default-font
+
+i
+  font-size: inherit
+
+//BUTTON DEFAULT STYLES
+.button
+  font-size: 12px
+  transition: all .5s ease
+  display: inline-block
+  text-align: center
+  text-transform: uppercase
+  font-family: $bold-font
+  color: #818181
+  cursor: pointer
+  border: 2px solid #e6e6e6
+  padding: 12px 0
+  min-width: 130px
+  &:hover
+    border: 2px solid $accent
+    background-color: $accent
+    color: $light-color
+  &:active,:focus
+    background-color: darken($accent, 10%)
+
+.sect_title
+  text-align: center
+  h2
+    font-family: $bold-font
+    font-size: 23px
+    text-transform: uppercase
+
+
+.container_custom
+  max-width: 1150px
+  margin: 0 auto
+  padding: 15px
+
+.container-large
+  max-width: 1360px
+  margin: 0 auto
+  padding: 1px 15px
+
+.wrapper
+  display: flex
+
+.hidden
+  display: none
+
+.second_slider
+  .slick-prev, .slick-next
+    display: none!important
+  .icon
+    max-width: 120px
+.slick-prev, .slick-next
+  cursor: pointer
+  border: 0
+  background-color: transparent
+  position: absolute
+  top: 35%
+  transform: translateY(-50%)
+  color: #d3d3d3
+  font-size: 12px!important
+  &:hover
+    color: #909090
+.slick-prev
+  left: -30px
+.slick-next
+  right: -30px
+
+ul.slick-dots
+  position: absolute
+  right: 0
+  bottom: 65px
+  &::before
+    content: ''
+    position: absolute
+    bottom: 50%
+    left: -360px
+    height: 1px
+    background-color: #dfdfdf
+    width: 400px
+  li
+    display: inline-block
+    margin-left: 20px
+    button
+      cursor: pointer
+      font-size: 14px
+      color: #e1e1e1
+      font-family: RalewayBold, sans-serif
+      background-color: transparent
+      border: 0
+  li.slick-active
+    button
+      color: #cecece

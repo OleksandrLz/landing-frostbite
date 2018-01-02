@@ -1,0 +1,222 @@
+@import "bourbon"
+@import "sass/vars"
+@import "sass/base"
+
+
+header
+  background-size: cover
+  background-position: center
+  position: relative
+  .top
+    position: relative
+    display: flex
+    justify-content: space-between
+    padding-top: 45px
+    .right-top
+      display: flex
+      .logo
+        width: 17px
+      .search
+        cursor: pointer
+        width: 14px
+        padding: 4px 0 0 0
+        margin-right: 27px
+  .container-large
+    padding: 0 40px
+    ._studio
+      display: flex
+      justify-content: center
+      margin-top: 300px
+      .studio
+        text-transform: uppercase
+        color: $light-color
+        font-family: $bold-font
+        background-color: $accent
+        font-size: 17px
+        padding: 12px 14px
+        transition: all .5s ease
+        &:hover
+          background-color: darken($accent, 10%)
+        &:active
+          background-color: darken($accent, 15%)
+    h1
+      max-width: 750px
+      margin: 15px auto
+      font-family: RalewayBold, sans-serif
+      text-transform: uppercase
+      text-align: center
+      font-size: 35px
+      color: $light-color
+      letter-spacing: 70px
+    .arrow
+      width: 10px
+      margin: 300px auto 50px
+
+.search_inp
+  cursor: pointer
+  padding: 0 6px 1px
+
+
+.menu
+  background-color: #fff
+  position: absolute
+  z-index: 456
+  display: none
+  left: 50%
+  transform: translateX(-50%)
+  max-width: 1360px
+  width: 100%
+  .cross
+    cursor: pointer
+    width: 11px
+    position: absolute
+    right: 30px
+    top: 5%
+.top-menu
+  display: flex
+  justify-content: center
+  padding-top: 80px
+  padding-bottom: 45px
+  border-bottom: 2px solid #f2f2f2
+  flex-wrap: wrap
+  div
+    text-align: center
+    p
+      text-transform: uppercase
+      a
+        padding: 15px
+        transition: all .5s ease
+        font-size: 14px
+        &:hover
+          color: #222
+
+  .pict-1, .pict-2, .pict-3, .pict-4, .pict-5
+    margin: 0 45px
+    img
+      width: 20px
+      height: 20px
+.low-menu
+  text-transform: uppercase
+  display: flex
+  justify-content: center
+  padding-top: 100px
+  padding-bottom: 100px
+  ul
+    margin: 0 30px
+    li
+      padding-bottom: 25px
+      a
+        padding: 15px
+        transition: all .5s ease
+        font-size: 14px
+        &:hover
+          background-color: #222
+          color: #fff
+    h4
+      font-size: 20px
+      color: #222
+      margin: 0
+      padding-left: 13px
+
+
+.sandv-wrap
+  cursor: pointer
+  position: relative
+  z-index: 10
+.nav-trigger
+  cursor: pointer
+  background: transparent
+  border: none
+  vertical-align: middle
+  z-index: 10
+.nav-trigger:focus
+  outline: 0
+.nav-trigger:hover span, .nav-trigger:hover span:before, .nav-trigger:hover span:after
+  background: #666
+.nav-trigger:before
+  content: ''
+  opacity: 0
+  width: 0
+  height: 0
+  border-radius: 50%
+  position: absolute
+  top: 50%
+  left: 50%
+  background: transparent
+  transform: translate(-50%, -50%)
+  transition: all 0.4s ease
+.nav-trigger span
+  display: block
+  position: relative
+.nav-trigger span:before, .nav-trigger span:after
+  content: ''
+  position: absolute
+  left: 0
+.nav-trigger span:before
+  top: -5px
+.nav-trigger span:after
+  bottom: -5px
+.nav-trigger span,
+.nav-trigger span:before,
+.nav-trigger span:after
+  width: 15px
+  height: 2px
+  background: #7c7e88
+  transition: all 0.4s ease
+.nav-trigger.is-active:before
+  opacity: 1
+  width: 50px
+  height: 50px
+  background: transparent
+.nav-trigger.is-active span
+  background: transparent
+.nav-trigger.is-active span:before
+  top: 0
+  transform: rotate(225deg)
+  background-color: #7c7e88
+.nav-trigger.is-active span:after
+  bottom: 0
+  transform: rotate(-225deg)
+  background-color: #7c7e88
+
+.search-field
+  display: flex
+  form
+    position: absolute
+    right: 90px
+    bottom: -4px
+    p
+      margin: 0 10px
+
+.hidens
+  display: none
+  li h4
+    &:hover
+      color: $default-color
+
+.low-menu
+  ul.list1
+    display: none
+
+@media only screen and (max-width : 1020px)
+  h1
+    display: none
+
+@media only screen and (max-width : 992px)
+  .low-menu ul
+    display: none
+    margin: 0
+    padding: 0
+  .low-menu .hidens
+    display: block
+
+@media only screen and (max-width : 750px)
+  header .arrow
+    display: none
+  header ._studio
+    margin-bottom: 360px
+
+@media only screen and (max-width : 400px)
+  header .inp
+    width: 100px
+

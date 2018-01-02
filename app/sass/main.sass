@@ -1,0 +1,404 @@
+@import "bourbon"
+@import "vars"
+@import "libs"
+@import "animation"
+
+.sect_1
+  .col-xl-6.col-lg-6.col-md-6
+    padding: 0
+  .wave
+    width: 80px
+    margin: 0 auto 40px
+    padding-top: 125px 
+  h2
+    text-transform: uppercase
+    max-width: 310px
+    color: $heading-color
+    margin: 0 auto 100px
+  .picture-1, .picture-2, .picture-1-sm, .picture-2-sm
+    max-width: 570px
+    width: 100%
+  .picture-1-sm, .picture-2-sm
+    display: none
+  h3
+    text-transform: uppercase
+    color: $heading-color
+    font-family: $bold-font
+    font-size: 23px
+  .wrapper
+    justify-content: center
+    align-items: center
+  .about
+    padding: 15px
+    max-width: 420px
+  .row+.row
+    margin-top: 50px
+  .third
+    margin-top: 146px
+    display: flex
+    justify-content: space-between
+    padding: 0 85px 50px
+    position: relative
+    &::before
+      content: ''
+      top: 5px
+      width: 2px
+      position: absolute
+      height: 30px
+      bottom: 80%
+      left: 0
+      transform: translate(-50%, 50%)
+      background-color: $default-color
+    .about2, .about3
+      max-width: 460px
+  p
+    font-size: 14px
+  .buttons
+    text-align: center
+    margin-bottom: 155px
+    .button
+      margin: 0 10px
+
+
+.sect_2
+  background-color: $heading-color
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    opacity: .4
+    left: 50%
+    top: -50px
+    width: 2px
+    height: 100px
+    background-color: $default-color
+  .button_on_dark
+    border-color: #56585f
+    color: #ffffff
+    &:hover
+      border-color: $accent
+  .s2_title
+    color: #ffffff
+    margin: 125px 0 30px 0
+    h2
+      margin: 0 0 30px 0
+    p
+      max-width: 550px
+      margin: 0 auto
+      font-size: 14px
+      color: #949494
+  .wrapper
+    margin-bottom: 315px
+    justify-content: center
+    .button+.button
+      margin-left: 20px
+
+
+.sect_3
+  position: relative
+  min-height: 750px
+  background-color: #fff
+  .slider_wrapper
+    position: absolute
+    top: -215px
+    max-width: 1170px
+    left: 50%
+    transform: translateX(-50%)
+  .slick_slider
+    margin-left: 50px
+    padding-left: 20px
+    position: relative
+    .slick_slide_content
+      max-width: 600px
+      width: 100%
+      font-size: 14px
+      .slick_item_descr
+        transition: all .5s ease
+        transition-delay: .5s
+        max-width: 470px
+        opacity: 0
+        visibility: hidden
+      h3
+        font-size: 20px
+        margin: 50px 0 25px 0
+        text-transform: uppercase
+        color: $heading-color
+        font-family: $bold-font
+      .slider_pict
+        position: relative
+        height: 600px
+        background-size: cover
+        background-position: center
+        .play_icon
+          opacity: 0
+          position: absolute
+          top: calc(50% - 30px)
+          left: calc(50% - 30px)
+          width: 60px
+      .clock
+        display: inline-block
+        width: 12px
+    .slick-slide.slick_slide_content
+      transition: all .7s ease
+      transition-delay: 0.5s
+      transform: scale(0.75)
+      margin-top: -34px
+      &.slick-active
+        transform: scale(1)
+        margin: 0 -35px 0 0
+        opacity: 1
+        .slick_item_descr
+          opacity: 1
+          visibility: visible
+        .slider_pict
+          .play_icon
+            opacity: 1
+            visibility: visible
+    .slick-active+.slick-slide
+      opacity: 1
+    p.date_of_post
+      margin-top: 50px
+    span.date_of_post
+      margin-left: 5px
+      font-family: $italic-font
+
+.sect_4
+  min-height: 690px
+  background-color: #fafafa
+  .s4_right_image
+    position: absolute
+    background: url(../img/s3_bg.jpg) no-repeat
+    top: -86px
+    left: 45%
+    height: 630px
+    width: 100%
+    .s4_picture
+      position: absolute
+      width: 350px
+      height: 350px
+      bottom: -100px
+      left: -100px
+  .wrapper
+    position: relative
+  .s4_descr
+    max-width: 350px
+    position: relative
+    margin-top: 255px
+    h2
+      margin: 45px 0 25px 0
+      position: relative
+      text-transform: uppercase
+      color: $heading-color
+      font-family: $bold-font
+      font-size: 20px
+      &::before
+        content: ''
+        position: absolute
+        width: 80px
+        height: 7px
+        left: 0
+        top: -41px
+        background: url(../img/waves.png) no-repeat
+    p
+      font-size: 14px
+      margin-bottom: 30px
+    .button
+      background-color: $accent
+      color: #ffffff
+      border-color: $accent
+      &:hover
+        background-color: darken($accent, 10%)
+        border-color: darken($accent, 10%)
+      &:active
+        background-color: darken($accent, 15%)
+        border-color: darken($accent, 15%)
+
+.sect_5
+  .sect_title
+    margin-top: 180px
+    h2
+      position: relative
+      color: $heading-color
+      font-size: 26px
+      font-family: $bold-font
+      margin-bottom: 90px
+      &::before
+        content: ''
+        position: absolute
+        width: 80px
+        height: 7px
+        left: 50%
+        transform: translateX(-50%)
+        top: -41px
+        background: url(../img/waves.png) no-repeat
+  .row
+    justify-content: space-between
+  .s5_item
+    margin: 30px 0
+    max-width: 335px
+    h4
+      font-family: $bold-font
+      color: $heading-color
+      font-size: 17px
+      margin: 50px 0 10px 0
+    p.s5i_career
+      color: $heading-color
+      position: relative
+      text-transform: uppercase
+      font-family: $accent-font
+      font-size: 15px
+      margin: 0 0 30px 0
+      &::before
+        content: ''
+        position: absolute
+        height: 2px
+        background-color: #d1d1d1
+        width: 30px
+        bottom: -30px
+        left: 0
+    p.s5i_descr
+      font-size: 14px
+      margin: 60px 0 30px 0
+    .s5i_picture
+      background-position: center
+      background-size: cover
+      max-width: 335px
+      height: 335px
+  i
+    font-size: 20px
+  a
+    color: $default-color
+  a+a
+    margin-left: 20px
+  .second_slider
+    margin: 105px 0 70px 0
+
+footer
+  padding: 80px 0
+  color: $light-color
+  background-color: $heading-color
+  .wrapper
+    justify-content: space-between
+    flex-wrap: wrap
+    .logo
+      max-width: 17px
+    ul
+      padding: 0
+      margin: 0
+      &:nth-child(2)
+        margin-left: 50px
+    a
+      color: #ffffff
+      font-size: 13px
+      margin: 0
+    >:nth-child(2), >:nth-child(3)
+      li+li
+        margin-top: 20px
+    >:nth-child(4)
+      li
+        display: inline-block
+        a
+          font-size: 19px
+      li+li
+        margin-left: 20px
+  form
+    max-width: 360px
+    h3
+      margin-top: 0
+      font-size: 15px
+      text-transform: uppercase
+    p
+      font-size: 14px
+    .foot_form_wrapper
+      position: relative
+    .form_label
+      position: relative
+      max-width: 360px
+    button
+      background-color: transparent
+      border: 0
+      position: absolute
+      top: 0
+      right: 0
+      margin-top: 18px
+      margin-right: 18px
+      font-size: 20px
+      color: #42434b
+      img
+        width: 10px
+    input
+      padding: 15px 22px
+      width: 360px
+      background-color: transparent
+      border: 2px solid #42434b
+      color: $light-color
+      font-size: 12px
+  .socials_footer_md
+    display: none
+    li
+      display: inline-block
+      a
+        text-align: center
+        font-size: 22px
+
+#form
+  padding: 50px 20px
+  background-color: #333333
+  max-width: 400px
+  margin: auto
+  position: relative
+  h4
+    font-size: 24px
+    text-align: center
+    color: #fff
+  p
+    text-align: center
+    font-size: 16px
+    label
+      position: relative
+      i
+        position: absolute
+        margin-left: 20px
+        margin-top: 20px
+  span
+    display: block
+    text-align: center
+    color: #ddd
+  .input
+    border: none
+    max-width: 280px
+    width: 100%
+    height: 50px
+    background-color: #F1F1F1
+    outline: none
+    text-indent: 50px
+    color: #000
+  .button
+    max-width: 280px
+    width: 100%
+    height: 50px
+    background-color: #666
+    font-size: 15px
+    border: 1px solid #000
+    color: #ddd
+    transition: all .7s ease
+    &:hover
+      background-color: #3d3d3d
+      color: #fff
+.mfp-close-btn-in .mfp-close
+  color: #fff
+  z-index: 999
+
+.search_inp
+  border: 2px solid $accent
+  color: $light-color
+  background-color: $accent
+  font-family: $bold-font
+
+#picture_team
+  max-width: 600px
+  margin: 0 auto
+  min-height: 400px
+  background-size: cover
+  background-position: center
+@import "media"
