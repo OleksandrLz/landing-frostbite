@@ -1,4 +1,4 @@
-<h2>landing-page Frostbite</h2>
+<h2>Landing-page Frostbite</h2>
 
 <span>optimized for fast-loading and CMS</span>
 
