@@ -27,11 +27,11 @@ gulp.task('browser-sync', function() {
 	});
 });
 
-
+// чтобы запустить эту задачу, наберите в командной строке gulp jade
 gulp.task('jade', function() {
     return gulp.src('app/*.jade')
         .pipe(jade())
-        .pipe(gulp.dest('app')); 
+        .pipe(gulp.dest('app')); // указываем gulp куда положить скомпилированные HTML файлы
 });
 
 
@@ -41,7 +41,7 @@ gulp.task('sass', ['headersass'], function() {
 			includePaths: bourbon.includePaths
 		}).on("error", notify.onError()))
 		.pipe(rename({suffix: '.min', prefix : ''}))
-		.pipe(autoprefixer(['last 10 versions']))
+		.pipe(autoprefixer(['last 15 versions']))
 		.pipe(cleanCSS())
 		.pipe(gulp.dest('app/css'))
 		.pipe(browserSync.reload({stream: true}))
@@ -53,7 +53,7 @@ gulp.task('headersass', function() {
 			includePaths: bourbon.includePaths
 		}).on("error", notify.onError()))
 		.pipe(rename({suffix: '.min', prefix : ''}))
-		.pipe(autoprefixer(['last 10 versions']))
+		.pipe(autoprefixer(['last 15 versions']))
 		.pipe(cleanCSS())
 		.pipe(gulp.dest('app'))
 		.pipe(browserSync.reload({stream: true}))
@@ -63,8 +63,7 @@ gulp.task('libs', function() {
 	return gulp.src([
         'app/libs/jquery/dist/jquery.min.js',
         'app/libs/slick/slick.min.js',
-        'app/libs/magnific-popup/jquery.magnific-popup.js',
-        'app/libs/masked/jquery.maskedinput.min.js',
+        'app/libs/magnific-popup/jquery.magnific-popup.js'
 		])
 		.pipe(concat('libs.min.js'))
 		.pipe(uglify())
