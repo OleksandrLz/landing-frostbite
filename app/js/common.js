@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     $("a.mfp_picture").click(function () {
-        var picture = $(this).children(".s5i_picture").css("background-image");
+        var picture = $(this).children(".sect_team_picture").css("background-image");
         $("#picture_team").css("background-image", picture);
     }).magnificPopup({
         src: "#picture_team",
@@ -18,8 +18,6 @@ $(document).ready(function() {
         $('html, body').animate({scrollTop: $(scroll_el).offset().top - 100}, 500);
         return false;
     });
-
-    $("#form input[type='tel']").mask("+38(099) 999-9999");
 
     $('.sandv-wrap').click(function(){
         $('.menu').slideDown()
@@ -50,7 +48,7 @@ $(document).ready(function() {
         waitForAnimate: false
     });
 
-    $(".second_slider").slick({
+    $(".partners_slider").slick({
         speed: 700,
         slidesToShow: 5,
         slidesToScroll: 3,

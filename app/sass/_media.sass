@@ -11,7 +11,7 @@
     right: -50px
 
 @media only screen and (max-width : 1160px)
-  .sect_3
+  .sect_work
     .slider_wrapper
       padding: 0 20px
       .slick-dots
@@ -23,13 +23,13 @@
 @media only screen and (max-width : 1020px)
   footer .container_custom, section .container_custom
     max-width: 875px
-  header .container-large ._studio .studio
+  header .container-top ._studio .studio
     padding: 14px 0
     text-align: center
     max-width: 280px
     width: 100%
     font-size: 25px
-  .sect_1
+  .sect_about
     .wave
       padding-top: 60px
     .sect_title h2
@@ -37,7 +37,7 @@
       max-width: 350px
     .row .about
       margin-left: 30px
-    .third
+    .about_story
       padding-bottom: 30px
       p+p
         margin-left: 30px
@@ -47,7 +47,7 @@
       display: none
   .slick-prev,.slick-next
     display: none!important
-  .sect_3
+  .sect_work
     .slider_wrapper
       padding: 0
     .slick_slider
@@ -55,25 +55,25 @@
       .slick-dots
         left: -40px
         bottom: 143px
-  .sect_3 .slick_slider .slick-slide.slick_slide_content.slick-active
+  .sect_work .slick_slider .slick-slide.slick_slide_content.slick-active
     margin: 0 -50px 0 0
-  .sect_3 .slick_slider .slick-slide.slick_slide_content.slick-active .slick_item_descr
+  .sect_work .slick_slider .slick-slide.slick_slide_content.slick-active .slick_item_descr
     margin-left: 130px
-  .sect_4
-    .s4_descr
+  .sect_journal
+    .sect_journal_descr
       margin-left: 40px
-    .s4_right_image
+    .sect_journal_right_image
       width: 400px
       background-position: center
       -webkit-background-size: cover
       background-size: cover
       right: 0
       left: auto
-      background-image: url(../img/sm_s4.jpg)
-  .sect_5
+      background-image: url(../img/journal_xs.jpg)
+  .sect_team
     >:nth-child(1)
       padding: 0 50px
-  .s5_cards
+  .sect_team_cards
     max-width: 992px
   footer
     padding-bottom: 65px
@@ -100,14 +100,14 @@
     animation-name: none !important
 
 @media only screen and (max-width : 840px)
-  .sect_4 .s4_descr
+  .sect_journal .sect_journal_descr
     margin-left: 20px
     max-width: 250px
     padding-right: 10px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-  header .container-large
+  header .container-top
     padding: 0 35px
     ._studio .studio
       padding: 15px 0
@@ -127,7 +127,7 @@
 
   p
     line-height: 33px
-  .sect_1
+  .sect_about
     .picture-2-sm, .picture-1-sm
       max-width: 100%
       img
@@ -154,7 +154,9 @@
       p
         margin-bottom: 0
         font-size: 26px
-    .third
+    .row+.row
+      margin-top: 0
+    .about_story
       padding: 0 60px
       margin-top: 115px
       flex-direction: column
@@ -172,12 +174,12 @@
         transform: translateX(-50%)
         background-color: $default-color
         opacity: .4
-      p.about2, p.about3
+      p.about_story_left, p.about_story_right
         max-width: 600px
         width: 100%
         margin: 0 auto
         font-size: 26px
-      p.about3
+      p.about_story_right
         margin-top: 110px
     .buttons
       margin-top: 70px
@@ -190,14 +192,14 @@
     display: flex
     flex-direction: column-reverse
     align-items: center
-  .sect_2
+  .sect_projects
     .wrapper
       margin-bottom: 215px
     &:before
       height: 200px
       top: -100px
       width: 4px
-    .s2_title
+    .sect_projects_title
       margin-bottom: 40px
       h2
         margin: 180px 0 30px 0
@@ -209,14 +211,14 @@
       padding: 27px 0
       font-size: 24px
       border-width: 4px
-  .sect_3 .slick_slider .slick-slide.slick_slide_content.slick-active .slick_item_descr
+  .sect_work .slick_slider .slick-slide.slick_slide_content.slick-active .slick_item_descr
     margin: 0 auto
-  .sect_3 .slick_slider .slick-slide.slick_slide_content.slick-active
+  .sect_work .slick_slider .slick-slide.slick_slide_content.slick-active
     margin-right: 70px
     transition-delay: 0.5s
-  section.sect_3
-    min-height: 850px
-    margin-bottom: 140px
+  section.sect_work
+    min-height: 910px
+    margin-bottom: 110px
     .slider_wrapper
       top: -115px
       max-width: 750px
@@ -235,8 +237,8 @@
           div.clock
             margin-right: 20px
             img
-              width: 27px
-              height: 27px
+              width: 20px
+              height: 20px
           span.date_of_post
             font-size: 26px
         &.slick-active
@@ -247,15 +249,15 @@
     display: block!important
   .slick-next
     right: 50px
-  .sect_3 .slick_slider
+  .sect_work .slick_slider
     margin-left: 40px
     .slick_slide_content
       width: 100%
       max-width: 600px
-  .sect_4
-    div.s4_right_image
-      background-image: url(../img/xs_s4.jpg)
-    .s4_descr
+  .sect_journal
+    div.sect_journal_right_image
+      background-image: url(../img/journal_xs.jpg)
+    .sect_journal_descr
       max-width: initial
       margin-top: 600px
       margin-bottom: 120px
@@ -277,7 +279,7 @@
         width: 240px
         padding: 20px 0
         font-size: 18px
-  .sect_4 .s4_right_image
+  .sect_journal .sect_journal_right_image
     width: 100%
     height: 500px
     background-position: center
@@ -285,15 +287,15 @@
     top: 0
     right: 0
     left: auto
-    background-image: url(../img/s3_bg.jpg)
-  .s4_picture
+    background-image: url(../img/journal_bg.jpg)
+  .sect_journal_picture
     display: none
-  .sect_5
+  .sect_team
     .sect_title h2
       margin-bottom: 70px
     .container_custom
       padding: 0 35px
-    .s5_item
+    .sect_team_item
       max-width: initial
       i
         font-size: 43px
@@ -301,23 +303,23 @@
         margin-left: 15px
       h4
         font-size: 30px
-      p.s5i_career
+      p.sect_team_career
         font-size: 30px
         color: $heading-color
         &::before
           bottom: -60px
           width: 60px
           height: 3px
-      p.s5i_descr
+      p.sect_team_descr
         margin-top: 120px
         font-size: 26px
-    .s5_item+.s5_item
-      margin-top: 110px
-  .sect_5 .s5_item .s5i_picture
+    .sect_team_item+.sect_team_item
+      margin-top: 80px
+  .sect_team .sect_team_item .sect_team_picture
     max-width: 670px
     height: 660px
     margin: 0 auto
-  .sect_5 .sect_title h2
+  .sect_team .sect_title h2
     font-size: 46px
     &::before
       width: 160px
@@ -351,7 +353,7 @@
             width: 100%
             height: 70px
             border-width: 4px
-            font-size: 26px
+            font-size: 24px
           button
             margin-top: 25px
             margin-right: 25px
@@ -378,43 +380,46 @@
 
 
 @media only screen and (max-width : 700px)
-  .sect_1 .third
+  .sect_about .about_story
     padding: 0 30px
-  .sect_1 .buttons a.button
+  .sect_about .buttons a.button
     margin: 10px
   .slick-prev,.slick-next
     display: none!important
-  .sect_3 .slick_slider
+  .sect_work .slick_slider
     margin-left: 15px
-  .sect_3 .slick_slide_content.slick-slide
+  .sect_work .slick_slide_content.slick-slide
     max-width: 550px
     margin-left: 15px
-  .sect_5 .s5_item .s5i_picture
+  .sect_team .sect_team_item .sect_team_picture
     height: 500px
   footer .wrapper .footer_links+.footer_links
     margin-left: 30%
 
 @media only screen and (max-width : 600px)
-  .sect_1 h2#team
+  .sect_about h2#team
     font-size: 33px
   footer .wrapper .footer_links+.footer_links
     margin-left: 20%
+  .sect_about
+    .row
+      .about
+        padding: 0 15px
 
 @media only screen and (max-width : 500px)
-  .second_slider
+  .partners_slider
     .icon
       margin: 0 auto
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-  .sect_1
-    .row
-      .about
-        padding: 15px
-    .third
+  .sect_about
+    .about_story
       padding: 0 10px
-  section.sect_3
-    min-height: 600px
+      &::after
+        top: -65px
+  section.sect_work
+    min-height: 510px
     .slick-slide.slick_slide_content
       transform: scale(1)
       margin: 0
@@ -438,18 +443,28 @@
         margin: 0
         .slick_item_descr
           margin: 0 auto
-
-  .sect_3 .slick_slide_content.slick-slide
+      
+    .slider_wrapper
+      .slick-slide.slick_slide_content
+        .slick_item_descr
+          div.clock img
+              width: 14px
+              height: 14px          
+          
+  .sect_work .slick_slide_content.slick-slide
     margin-left: 40px
     max-width: 320px
-  .sect_3 .slick_slider .slick_slide_content .slider_pict
+  .sect_work .slick_slider .slick_slide_content .slider_pict
     height: 300px
-  .sect_4 .s4_descr
+  .sect_journal .sect_journal_descr
     margin-top: 600px
-  .sect_5 .s5_item p.s5i_descr
-    margin-top: 60px
-  .sect_5 .s5_item p.s5i_career::before
-    bottom: -30px
+  .sect_team
+        .sect_team_item+.sect_team_item
+          margin-top: 60px
+        .sect_team_item p.sect_team_descr
+          margin-top: 60px
+        .sect_team_item p.sect_team_career::before
+          bottom: -30px
   h2
     font-size: 24px!important
   h3
@@ -466,22 +481,22 @@
     border-width: 2px!important
   i
     font-size: 25px !important
-  .sect_1 .third
+  .sect_about .about_story
     margin-top: 50px
-  .sect_1 .third p.about2, .sect_1 .third p.about3
+  .sect_about .about_story p.about_story_left, .sect_about .about_story p.about_story_right
     margin-top: 30px
   footer .wrapper
     .footer_links+.footer_links
       margin-left: 30%
-  .sect_5 .s5_item .s5i_picture
+  .sect_team .sect_team_item .sect_team_picture
     height: 450px
 
 @media only screen and (max-width: 360px)
-  .sect_1 h2#team
+  .sect_about h2#team
     font-size: 20px!important
-  .sect_3 .slick_slide_content.slick-slide
+  .sect_work .slick_slide_content.slick-slide
     max-width: 250px
-  .sect_3 .slick_slider .slick_slide_content .slider_pict
+  .sect_work .slick_slider .slick_slide_content .slider_pict
     height: 300px
-  section.sect_3
+  section.sect_work
     min-height: 500px

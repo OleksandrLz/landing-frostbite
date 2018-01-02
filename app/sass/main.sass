@@ -3,13 +3,13 @@
 @import "libs"
 @import "animation"
 
-.sect_1
+.sect_about
   .col-xl-6.col-lg-6.col-md-6
     padding: 0
   .wave
     width: 80px
     margin: 0 auto 40px
-    padding-top: 125px 
+    padding-top: 125px
   h2
     text-transform: uppercase
     max-width: 310px
@@ -33,7 +33,7 @@
     max-width: 420px
   .row+.row
     margin-top: 50px
-  .third
+  .about_story
     margin-top: 146px
     display: flex
     justify-content: space-between
@@ -49,7 +49,7 @@
       left: 0
       transform: translate(-50%, 50%)
       background-color: $default-color
-    .about2, .about3
+    .about_story_left, .about_story_right
       max-width: 460px
   p
     font-size: 14px
@@ -60,7 +60,7 @@
       margin: 0 10px
 
 
-.sect_2
+.sect_projects
   background-color: $heading-color
   position: relative
   &::before
@@ -77,7 +77,7 @@
     color: #ffffff
     &:hover
       border-color: $accent
-  .s2_title
+  .sect_projects_title
     color: #ffffff
     margin: 125px 0 30px 0
     h2
@@ -94,9 +94,9 @@
       margin-left: 20px
 
 
-.sect_3
+.sect_work
   position: relative
-  min-height: 750px
+  min-height: 800px
   background-color: #fff
   .slider_wrapper
     position: absolute
@@ -162,17 +162,18 @@
       margin-left: 5px
       font-family: $italic-font
 
-.sect_4
+.sect_journal
+  position: relative	
   min-height: 690px
   background-color: #fafafa
-  .s4_right_image
+  .sect_journal_right_image
     position: absolute
-    background: url(../img/s3_bg.jpg) no-repeat
+    background: url(../img/journal_bg.jpg) no-repeat
     top: -86px
     left: 45%
     height: 630px
     width: 100%
-    .s4_picture
+    .sect_journal_picture
       position: absolute
       width: 350px
       height: 350px
@@ -180,7 +181,7 @@
       left: -100px
   .wrapper
     position: relative
-  .s4_descr
+  .sect_journal_descr
     max-width: 350px
     position: relative
     margin-top: 255px
@@ -198,7 +199,7 @@
         height: 7px
         left: 0
         top: -41px
-        background: url(../img/waves.png) no-repeat
+        background: url(../img/icons/waves.png) no-repeat
     p
       font-size: 14px
       margin-bottom: 30px
@@ -213,7 +214,7 @@
         background-color: darken($accent, 15%)
         border-color: darken($accent, 15%)
 
-.sect_5
+.sect_team
   .sect_title
     margin-top: 180px
     h2
@@ -230,10 +231,10 @@
         left: 50%
         transform: translateX(-50%)
         top: -41px
-        background: url(../img/waves.png) no-repeat
+        background: url(../img/icons/waves.png) no-repeat
   .row
     justify-content: space-between
-  .s5_item
+  .sect_team_item
     margin: 30px 0
     max-width: 335px
     h4
@@ -241,7 +242,7 @@
       color: $heading-color
       font-size: 17px
       margin: 50px 0 10px 0
-    p.s5i_career
+    p.sect_team_career
       color: $heading-color
       position: relative
       text-transform: uppercase
@@ -256,10 +257,10 @@
         width: 30px
         bottom: -30px
         left: 0
-    p.s5i_descr
+    p.sect_team_descr
       font-size: 14px
       margin: 60px 0 30px 0
-    .s5i_picture
+    .sect_team_picture
       background-position: center
       background-size: cover
       max-width: 335px
@@ -270,7 +271,7 @@
     color: $default-color
   a+a
     margin-left: 20px
-  .second_slider
+  .partners_slider
     margin: 105px 0 70px 0
 
 footer
