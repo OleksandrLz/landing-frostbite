@@ -1,4 +1,6 @@
 <h2>Landing-page Frostbite</h2>
+<p>Link to the site:<p>
+<p>https://oleksandrlz.github.io/landing-frostbite/gh-pages/</p>
 
 <span>optimized for fast-loading and CMS</span>
 
